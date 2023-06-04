@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #1c1c1c;
+}
+.calculator {
+    max-width: 450px;
+    width: 100%;
+
+    margin: 0 auto;
+    .display {
+        .screen {
+            height: 180px;
+            padding-right: 50px;
+            padding-top: 30px;
+            padding-left: 50px;
+            input {
+                color: #fff;
+                font-size: 40px;
+                text-align: right;
+                margin-top: 100px;
+                width: 100%;
+                background: transparent;
+                border: none;
+                outline: none;
+                caret-color: transparent;
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    table {
+        width: 100%;
+        text-align: center;
+        // table-layout: fixed;
+        padding: 20px;
+        border-spacing: 10px;
+
+        td {
+            width: 60px;
+            height: 90px;
+            background-color: #505050;
+            cursor: pointer;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 30px;
+        }
+        tr {
+            td {
+                &:last-child {
+                    background-color: #ff9500;
+                }
+            }
+            &:nth-child(1) {
+                td {
+                    &:nth-child(1) {
+                        background-color: #d4d4d2;
+                        color: black;
+                    }
+                    &:nth-child(2) {
+                        background-color: #d4d4d2;
+                        color: black;
+                    }
+                    &:nth-child(3) {
+                        background-color: #d4d4d2;
+                        color: black;
+                    }
+                }
+            }
+            &:nth-child(5) {
+                td {
+                    &:first-child {
+                        border-radius: 55px;
+                        padding-left: 40px;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="calculator">
+            <div class="display">
+                <div class="screen">
+                    <input
+                        type="text"
+                        id="inputNum"
+                        onblur="this.focus()"
+                        autofocus
+                    />
+                </div>
+                <table>
+                    <tr>
+                        <td class="disable" id="Clear"></td>
+                        <td class="disable" id="convertNeg">+/-</td>
+                        <td class="disable">%</td>
+                        <td class="disable">÷</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td class="disable">×</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td class="disable">-</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td class="disable">+</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">0</td>
+                        <td>,</td>
+                        <td id="equal">=</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
